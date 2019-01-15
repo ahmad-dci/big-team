@@ -1,14 +1,767 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>HolidayTest</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+
+    <script src="./js/main.js"></script>
 </head>
-<body>
-    
+
+<body  id="container">
+
+    <div class="container">
+        <div class="mainBar2">
+            <div class="telepathy">
+                <a href="#footer">
+                    <h2>HomeWork</h2>
+                </a>
+            </div>
+            <nav>
+
+                <div class="categories">
+                    <div>Categories &nbsp &nbsp<i class="fas fa-angle-down"></i> </div>
+                    <div class="bar">____</div>
+                    <a href="#">Desing</a>
+                    <a href="#">business</a>
+                    <a href="#">Inspiration</a>
+                    <a href="#">Philosophy</a>
+                    <a href="#">Products</a>
+                    <a href="#">Productivity</a>
+                    <a href="#">Resources</a>
+                    <a href="#">Interviews</a>
+
+                </div>
+                <div class="categories">
+                    <div>ReadingLists &nbsp &nbsp<i class="fas fa-angle-down"></i></div>
+                    <div class="bar">____</div>
+                    <a href="#">Product Design</a>
+                    <a href="#">Marketing Design</a>
+                    <a href="#">Startup Design</a>
+                    <a href="#">Enterprise Design</a>
+                    <a href="#">Culture Design</a>
+                    <a href="#">A Sprint Story</a>
+                </div>
+                <a href="#" class="Search" onclick="ShowSearchBar()">
+                    <div id="hiding2">Search &nbsp &nbsp<i class="fas fa-search"></i></div>
+                </a>
+                <!-- <div class="Search"><i class="fas fa-bars" onclick="ShowSideBar()"></i></div> -->
+                <div class="Search2">
+                    <input type="checkbox" id="toggling">
+                    <label for="toggling" >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="sideBarContainer">
+                            <div class="sideBar">
+                                <div class="sideBarMenu">
+                                    <a href="#">Home<div class="SideBarUnderLine"></div></a>
+                                    <a href="#">Work<div class="SideBarUnderLine"></div></a>
+                                    <a href="#">Services<div class="SideBarUnderLine"></div></a>
+                                    <a href="#">About<div class="SideBarUnderLine"></div></a>
+                                    <a href="#">Careers<div class="SideBarUnderLine"></div></a>
+                                    <a href="#">Blog<div class="SideBarUnderLine"></div></a>
+                                </div>
+                                <div class="toggleClass" onclick="hideSideBar()">></div>
+                            </div>
+                            <div class="sideBarFooter">
+
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                                <br />
+                                <small role="contentinfo">© 2000-2019 Telepathy (formerly Digital Telepathy).<br> All
+                                    rights
+                                    reserved.
+                                    <a href="#">Privacy Policy</a></small>
+                            </div>
+                        </div>
+                        <div class="sideBarMask"></div>
+
+                    </label>
+                </div>
+
+            </nav>
+
+        </div>
+        <div class="mainBar">
+            <div class="telepathy">
+                <a href="#footer">
+                    <h2>HomeWork</h2>
+                </a>
+            </div>
+            <nav>
+
+                <div class="categories">
+                    <div class="catTitle">Categories &nbsp &nbsp<i class="fas fa-angle-down"></i> </div>
+                    <div class="bar">____</div>
+                    <a href="#">Desing</a>
+                    <a href="#">business</a>
+                    <a href="#">Inspiration</a>
+                    <a href="#">Philosophy</a>
+                    <a href="#">Products</a>
+                    <a href="#">Productivity</a>
+                    <a href="#">Resources</a>
+                    <a href="#">Interviews</a>
+
+                </div>
+                <div class="categories">
+                    <div>ReadingLists &nbsp &nbsp<i class="fas fa-angle-down"></i></div>
+                    <div class="bar">____</div>
+                    <a href="#">Product Design</a>
+                    <a href="#">Marketing Design</a>
+                    <a href="#">Startup Design</a>
+                    <a href="#">Enterprise Design</a>
+                    <a href="#">Culture Design</a>
+                    <a href="#">A Sprint Story</a>
+                </div>
+                <a href="#" class="Search" onclick="ShowSearchBar()">
+                    <div id="hiding">Search &nbsp &nbsp<i class="fas fa-search"></i></div>
+                </a>
+
+                <div class="Search2">
+                    <input type="checkbox" id="toggling2">
+                    <label for="toggling2" >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="sideBarContainer">
+                            <div class="sideBar">
+                                <div class="sideBarMenu">
+                                    <a href="#">Home<div class="SideBarUnderLine"></div></a>
+                                    <a href="#">Work<div class="SideBarUnderLine"></div></a>
+                                    <a href="#">Services<div class="SideBarUnderLine"></div></a>
+                                    <a href="#">About<div class="SideBarUnderLine"></div></a>
+                                    <a href="#">Careers<div class="SideBarUnderLine"></div></a>
+                                    <a href="#">Blog<div class="SideBarUnderLine"></div></a>
+                                </div>
+                                <div class="toggleClass" onclick="hideSideBar()">></div>
+                            </div>
+                            <div class="sideBarFooter">
+
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                                <br />
+                                <small role="contentinfo">© 2000-2019 Telepathy (formerly Digital Telepathy).<br> All
+                                    rights
+                                    reserved.
+                                    <a href="#">Privacy Policy</a></small>
+                            </div>
+                        </div>
+                        <div class="sideBarMask"></div>
+
+                    </label>
+                </div>
+            </nav>
+        </div>
+
+        <div class="inspire">
+            <a href="#">
+                <h4>INSPIRATION</h4>
+            </a>
+            <div class="underLine"></div>
+        </div>
+        <div class="title">
+            <h1>30 Bold and Clean Web Designs for Inspiration</h1>
+        </div>
+        <form class="searchBar">
+            <button class="s"><i class="fas fa-search "></i></button>
+            <input type="text" class="s" placeholder=" search our library" autocomplete="off" />
+        </form>
+
+
+
+    </div>
+    <div class="declaration" id="top">
+        <div class="picture"><img src="./images/pic.jpg" /></div>
+        <div class="linkOfName">
+            <p> ________<br /><br /><small>by</small> <a href="#">STEPHANIE IRVINE </a></p>
+        </div>
+        <p>
+            <br />
+            Making design choices for your website can be a daunting task. Sometimes, you’re not sure what’s going on,
+            or what direction to take your web design. Well, that’s where Betterment comes in. We don’t want you to get
+            overwhelmed (or be without inspiration), so for this post, I’ve handpicked [inlinetweet prefix=””
+            tweeter=”” suffix=””]30 bold and clean web designs that will get your design mojo going[/inlinetweet].
+            <br /><br /><br />
+            But what makes bold and clean so special, you might ask?
+            <br /><br /><br />
+            The interwebs are a big place, and it can be easy for your site to blend in and get lost, unless you’ve
+            purposefully designed it to stand out. [inlinetweet prefix=”” tweeter=”” suffix=””]Bold, clean designs draw
+            attention and make browsing easy for users[/inlinetweet]. Bold makes a statement, while cluttered, mundane
+            websites make users bounce before you’ve even had the chance to tell them what you’re all about. Clean
+            design also helps the right things stand out (like your CTA) and minimizes distractions. Check out the
+            picks below, and let me know what you think.
+            <br /><br /><br />
+            Here are 30 bold and clean web designs for your inspiration. Hey-yea-yea! (I SAID HEY!)
+            <br /><br /><br /><br />
+        </p>
+    </div>
+    <div class="container2">
+        <div class="siteTitle">30 Sites to Inspire You</div>
+        <div class="thinBar"></div>
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/1.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">1</div>
+                <div>
+
+                    <div class="elementDescription">Everlane</div><br />
+                    <p>With a “back to basics” theme, Everlane (or, as I’d call it, Everlasting Awesomeness) is cutting
+                        out the fluff with a clean design and bold font.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/2.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">2</div>
+                <div>
+                    <div class="elementDescription">Catscarf</div><br />
+                    <p>This site features a big photograph of a pretty suave-looking cat wearing a cat scarf (yeah, you
+                        read that right — cat scarves for sale). We see the über chic name of the featured scarf and a
+                        perfectly placed CTA just below. What do users do? They shop. When do they shop? RIGHT MEOW!</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/3.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">3</div>
+                <div>
+                    <div class="elementDescription">THISISPAPER</div><br />
+                    <p>Like Catscarf, THISISPAPER also features a great full-size image that draws your eye right to
+                        the CTA. Buy a copy? Don’t mind if I do!</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/4.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">4</div>
+                <div>
+                    <div class="elementDescription">Falve</div><br />
+                    <p>A carousel of color-rich, full-page images with a clean, simple, sans serif font welcomes you on
+                        the homepage and implores you to stay.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/5.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">5</div>
+                <div>
+                    <div class="elementDescription">Brave People</div><br />
+                    <p>Check out the Brave People page, and you’re greeted with brave design. Bold, big photography and
+                        parallax design are complemented nicely by the mouseover effect on the photos of the team.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/6.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">6</div>
+                <div>
+                    <div class="elementDescription">Intersection</div><br />
+                    <p>Intersection’s site puts you on the street of a big city, looking up at a skyscraper — and
+                        directly at the site menu.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/7.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">7</div>
+                <div>
+                    <div class="elementDescription">You know what else is bold? Working with us.</div><br />
+                    <p>Do you love tackling fun & challenging design projects? Get a huge thrill out of solving complex
+                        business problems for smart, ambitious clients with innovative design? Do you find your happy
+                        place while savoring the perfect cup of coffee in the morning? Weird, so do we! <strong>We’re
+                            hiring for a senior UX/UI Designer just like you. <a href="#">See what it’s like to work
+                                with us</a></p></strong>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/8.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">8</div>
+                <div>
+                    <div class="elementDescription">Harry’s</div><br />
+                    <p>With another carousel, Harry’s cycles through high quality images with sans serif fonts. Each
+                        slide bears a smart description of their razors and accessories.
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/9.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">9</div>
+                <div>
+                    <div class="elementDescription">GC Watches</div><br />
+                    <p>GC Watches is presenting you with a timeless design: clear copy next to bold images.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/10.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">10</div>
+                <div>
+                    <div class="elementDescription">Squarespace</div><br />
+                    <p> Interactive graphics? Yes, please! Squarespace takes the bold image up a notch with animation.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/11.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">11</div>
+                <div>
+                    <div class="elementDescription">Jun Lu</div><br />
+                    <p> This design company knows what they’re doing. A neutral, gray background lets the product
+                        images take center stage. </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/12.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">12</div>
+                <div>
+                    <div class="elementDescription">Jonathan Decosta</div><br />
+                    <p>One word: grayscale. This site shows just how bold black-and-white can be.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/13.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">13</div>
+                <div>
+                    <div class="elementDescription">Escape Committee</div><br />
+                    <p> Red is a power color, and Escape Committee boldly embraces it as their accent color.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="elementImage">
+                <a href="">Home</a>"><a href="">
+                    <a href=""> <img src="./images/14.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">14</div>
+                <div>
+                    <div class="elementDescription">Wondersauce</div><br />
+                    <p>Opposites attract for Wondersauce, a digital development company that uses a clean, white font
+                        on a natural woodgrain background.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/15.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">15</div>
+                <div>
+                    <div class="elementDescription">Nixon</div><br />
+                    <p>Nixon splits its site with bilateral symmetry, with one side for each sex. Grayscale photos of a
+                        man and a woman facing the simple, three-option menu directs users right where they need to go.</p>
+                </div>
+            </div>
+        </div>
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/16.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">16</div>
+                <div>
+                    <div class="elementDescription">IWC Schaffhausen</div><br />
+                    <p>IWC Schaffhausen offers visitors a window into nature from the computer to introduce
+                        visitors to the aquatimer collection; it’s an unexpected and refreshingly clean design for
+                        a watch manufacturer.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/17.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">17</div>
+                <div>
+                    <div class="elementDescription">Doug Aitken: The Source</div><br />
+                    <p>A brief intro flashes photographs across the screen with soft, pulsating music. After the
+                        intro, video interviews continue with each creative individual in his project. A bold
+                        choice; <a href="#">as we recently discussed</a>, video can be tricky.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/18.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">18</div>
+                <div>
+                    <div class="elementDescription">Spotify</div><br />
+                    <p>Scroll beyond the hook & promise, and you’ll hit a design explosion. Big, high definition
+                        photographs dominate the page, which is complete with parallax scrolling and a clear CTA.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/19.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">19</div>
+                <div>
+                    <div class="elementDescription">Britney Spears</div><br />
+                    <p>It’s Britney, bitch. But in all seriousness, the design team nails it with a high quality
+                        image and just Britney’s name. Because she needs no introduction.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/20.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">20</div>
+                <div>
+                    <div class="elementDescription">Google Glass</div><br />
+                    <p>The Google Glass rolls through striking full-page images of different people wearing Google
+                        Glass in different situations for a simple-yet-bold design choice.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=''>SHAUN WHITE</a>">
+                <a href=""> <img src="./images/21.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">21</div>
+                <div>
+                    <div class="elementDescription">Shaun White
+                    </div><br />
+                    <p>The snowboarder’s site greets you with an excellent action shot of him in the clouds. If you’re
+                        into snowboarding, this picture is definitely going to capture your attention.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/22.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">22</div>
+                <div>
+                    <div class="elementDescription">Jack Daniels</div><br />
+                    <p>Once you get past the age verification, the black-and-white branding is carried throughout the
+                        home page, which greets you with a carousel featuring different varieties of the whiskey.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/23.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">23</div>
+                <div>
+                    <div class="elementDescription">Crop the Block</div><br />
+                    <p>Crop the Block truly showcases their filmmaking cred with a great selection of stunning video
+                        clips and exquisitely paired typography.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/24.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">24</div>
+                <div>
+                    <div class="elementDescription">Symbolset</div><br />
+                    <p>A color-changing background with animated white type make this site one-of-a-kind.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="element">
+            <div class="elementImage">
+                <a href=''>Home</a>">
+                <a href=""> <img src="./images/25.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">25</div>
+                <div>
+                    <div class="elementDescription">Whiteboard</div><br />
+                    <p>Whiteboard packs a punch with their single-page design, bold contrasts, and mouseover effects.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/26.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">26</div>
+                <div>
+                    <div class="elementDescription">Liberio</div><br />
+                    <p>Liberio declares simplicity with flat design. The site delivers with inviting graphics on a
+                        muted gold background. The warm, happy graphics of people, representative of three potential
+                        groups of product users, blink and smile at you, which is a nice touch.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="element">
+            <div class="elementImage">
+                <a href="#"> <img src="./images/27.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">27</div>
+                <div>
+                    <div class="elementDescription">Dropbox</div><br />
+                    <p>Sometimes less is more. Dropbox makes a clean entrance on their homepage with a white background
+                        and blue illustration.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/28.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">28</div>
+                <div>
+                    <div class="elementDescription">Simone Marcarino</div><br />
+                    <p>Hey, his page title says it, and I agree: smashing design. Marcarino uses bold colors with a
+                        minimalist honeycomb design combined with a striking mouseover effect.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="element">
+            <div class="elementImage">
+                <a href="#">Home Page" </a> >
+                <a href=""> <img src="./images/29.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">29</div>
+                <div>
+                    <div class="elementDescription">Cambridge Healthcare</div><br />
+                    <p>Healthcare providers rarely have websites with nice design, but Cambridge does. The vital info
+                        is showcased within a monochromatic blue color scheme.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/30.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">30</div>
+                <div>
+                    <div class="elementDescription">Pulse</div><br />
+                    <p>With the home page horizontally divided by color and content, Pulse provides bold contrast with
+                        simple, clean graphics.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="element">
+            <div class="elementImage">
+                <a href=""> <img src="./images/31.jpg" /></a>
+            </div>
+            <div class="elementDefine">
+                <div class="elementNumber">31</div>
+                <div>
+                    <div class="elementDescription">Dropify</div><br />
+                    <p>Warm, bright, exciting colors make the hero area of this single-page design really pop. Further
+                        down the page, the bright colors are contrasted with a simple, white background.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="thinBar"></div>
+
+    </div>
+    <div class="declaration">
+        <h1>so what's going on</h1>
+        <p>You may have noticed a commonality among many of the designs — high quality images, along with white,
+            non-serif font on a color background. While that design trend demands attention, those aren’t the
+            onlydesign routes you can take. Bold, clean and visually exciting web design can come in many formats from
+            videos to static graphics, grayscale to bold color, and full-page photo backgrounds to sliders.Bold comes
+            in a variety of flavors, and it’s up to you to pick the bold flavor that works for your project.<br /><br />
+            Hopefully, you’ve got a lot of inspiration and have an idea of how you’ll embolden your next site
+            design.Let me know what you thought of these choices — and what you think about bold, clean design. We love
+            yourfeedback!</p>
+
+
+    </div>
+    <div class="container2">
+        <div class="thinBar"></div>
+    </div>
+    <div class="declaration">
+        <p>If you get a thrill out of solving complex business problems and enjoy surrounding yourself with smart,
+            driven, hilarious people, <b>we’re looking for a Senior UX/UI Designer just like you.</b>
+
+        </p>
+        <br /><br /><br /> <br /><br /><br />
+
+        <div class="centerLink"><a href="">Check out what life could be like at DT </a>
+            <p>(Hint: it’s pretty rad)</p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="thinBar"></div>
+    </div>
+    <div class="lastDiv">
+        <div class="pictureAtBottom"><img src="./images/pic.jpg" /></div>
+        <p><small>read more by</small></p>
+        <a href="">STEPHANIE IRVINE</a>
+        <div class="underLine"></div>
+
+        <div class="lastDivText">
+            <p>I'm a writer, animal lover, and social media enthusiast living in a one stoplight town south of Chicago.
+                I write about things from my perspective: a ferociously fun, educated, almost-30-year-old who's working
+                for the man full-time. When I'm not doing that, I'm also a blogger at <a>digital-telepathy</a>. Yes, I
+                like piña coladas and getting caught in the rain. But I also love sunshine and beer. Oh, but ain't that
+                America.</p><br />
+            <div class="lastDivNav">
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+                <a href=""><i class="fab fa-glide-g"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom">
+        <img src="./images/bottomLeft.jpg" />
+        <img src="./images/bottomCenter.jpg" />
+        <img src="images/bottomRight.jpg" />
+    </div>
+    <div class='footer' id="footer">
+        <div class="footerTitle">
+            <h2>Telepathy</h2>
+        </div>
+        <div class="footerLinks">
+            <a href="#top">Home</a>
+            <a href="#top">Services</a>
+            <a href="#top">Careers</a>
+            <a href="#top">Work</a>
+            <a href="#top">About</a>
+            <a href="#top">Blog</a>
+
+        </div>
+        <div class="footerIcons">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+            <small role="contentinfo">© 2000-2019 Telepathy (formerly Digital Telepathy). All rights
+                reserved.
+                <a href="">Privacy Policy</a></small>
+        </div>
+    </div>
 </body>
+
 </html>
